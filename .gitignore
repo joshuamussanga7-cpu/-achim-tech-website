@@ -1,0 +1,14 @@
+# IDE files
+.idea/
+*.iml
+
+# Build files
+out/
+build/
+
+# Node/Vercel (if you use them later)
+node_modules/
+.vercel/
+
+# Project specific
+!public/
