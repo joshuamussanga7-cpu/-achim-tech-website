@@ -19,6 +19,7 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="#features">Features</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -54,6 +55,29 @@
         </div>
     </section>
 
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Why Choose ACHIM Tech?</h2>
+            <div class="features-grid">
+                <div class="feature-item reveal">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Reliable Solutions</h3>
+                    <p>We build robust, secure systems that grow with your business needs.</p>
+                </div>
+                <div class="feature-item reveal">
+                    <i class="fas fa-users"></i>
+                    <h3>Expert Team</h3>
+                    <p>Professional developers and consultants dedicated to your success.</p>
+                </div>
+                <div class="feature-item reveal">
+                    <i class="fas fa-clock"></i>
+                    <h3>On-Time Delivery</h3>
+                    <p>We respect your timeline and deliver high-quality results promptly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="about" class="about">
         <h2>About Us</h2>
         <p>ACHIM Business and Management Consulting Services is a tech firm based in Maswa, Simiyu. We are dedicated to empowering organizations through digital transformation, combining tech expertise with management consulting to deliver results that matter.</p>
@@ -81,5 +105,20 @@
             &copy; 2026 ACHIM Tech. All rights reserved.
         </div>
     </footer>
+    <script>
+        // Reveal animation on scroll
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+    </script>
 </body>
 </html>
